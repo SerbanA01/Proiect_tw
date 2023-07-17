@@ -1,0 +1,133 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/*Aici ai codul pentru bara de navigatie + poza*/
+#bara_navigatie {
+    display: inline-block;
+}
+#bara_navigatie li {
+    display: inline-block;
+}
+/*asta face bara de navigatie si poza sa fie pe aceeasi linie*/
+nav{/*tine minte aici ca daca mai ai un nav pe pagina se strica*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1%;
+    height: 30px;
+    width: auto;
+    overflow:hidden;
+    position: fixed;
+    width: 100%;
+    
+}
+/* aici poti sa te mai joci cu poza sa incapa mai bine */
+
+#bara_navigatie{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    transform: translateX(-6%);
+}
+
+#bara_navigatie a:hover{
+    color: white;
+}
+
+#bara_navigatie li:not(:last-child){
+    margin-right: 10%;
+}
+
+.items_nav{
+    text-decoration: none;
+    color: #66C25E;
+    white-space: nowrap;
+    transition: 0.5s ease;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Aici se termina navigatia!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#poza_front{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Sa pui aici caruselul nu stiu ce sa mai adaug momentan */
+h2{
+    text-align: center;
+}
+#oferte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+#oferte :not(:last-child){
+    margin-left: 10%;
+}
+#oferte :not(:first-child){
+    margin-right: 7%;
+}
+/* Aici trebuie adaugat un id pentru fiecare poza in parte si 
+apoi sa punem setarile de hover pentru fiecare in parte  */
+#oferte :first-child{
+    width: 85%;
+}
+#oferte :last-child{
+    width: 80%;
+    margin-top: 1%;
+}
+
+#oferte img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  } 
+
+/* ai grija la a doua poza ca resolutia e prea mica si cand e dat
+zoom asa se face urat cu pop-ul  la icon */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 10%;
+        }
+
+#catalog{
+    padding-top: -2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#catalog2 { 
+    padding-top: 4%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* de aici incepe zona de autovehicule, dupa parteneri */
+* {
+    margin: 0;
+  }
+  
+  * {
+    line-height: 1;
+  }
+#oferte, #servicii{
+    background-image: url('img_fundal_c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

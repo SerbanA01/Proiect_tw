@@ -1,0 +1,593 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Aici ai codul pentru bara de navigatie + poza*/
+#bara_navigatie {
+    display: inline-block;
+}
+#bara_navigatie li {
+    display: inline-block;
+}
+
+/*asta face bara de navigatie si poza sa fie pe aceeasi linie*/
+
+#container_navigatie img{
+    max-width: 100%;
+    height: auto;
+}
+#container_navigatie{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+z-index: 999;
+}
+nav{/*tine minte aici ca daca mai ai un nav pe pagina se strica*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1%;
+    height: 30px;
+    width: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    
+}
+
+/* aici poti sa te mai joci cu poza sa incapa mai bine */
+
+
+
+#bara_navigatie{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    transform: translateX(-6%);
+}
+
+#bara_navigatie a:hover{
+    color: white;
+}
+
+#bara_navigatie li:not(:last-child){
+    margin-right: 10%;
+}
+
+.items_nav{
+    text-decoration: none;
+    color: #66C25E;
+    white-space: nowrap;
+    transition: 0.5s ease;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* aici e dropdownul */
+
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    padding: 0;
+  }
+  
+  nav ul ul li {
+    display: block;
+    margin: 0;
+    width: 200px;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+  
+/*Aici se termina navigatia!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.container{
+    width: 1050px;
+    height:1050px;
+    position: absolute;
+    transform: translate(-50%,-30%);
+    top: 42%;
+    left: 50%;
+    overflow: hidden;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.wrapper img{
+    width: 100%;
+}
+
+
+
+
+/* Sa pui aici caruselul nu stiu ce sa mai adaug momentan */
+#box_servicii{
+    left:0;
+    top:87%;
+    position: relative;
+
+}
+
+/* aici este flex boxul mare pentru pozele de langa slideshow */
+
+#box_poze{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.poze_stg{
+    display: flex;
+    flex-direction: column;
+}
+.poze_dr{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between ;
+    position: relative;
+}
+.poze_dr{
+    margin-top: 30%;
+    margin-bottom: 60%;
+}
+.poze_stg{
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+/* de aici incep ofertele  */
+
+
+#oferte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+    
+}
+#oferte :not(:last-child){
+    margin-left: 10%;
+}
+#oferte :not(:first-child){
+    margin-right: 7%;
+}
+/* Aici trebuie adaugat un id pentru fiecare poza in parte si 
+apoi sa punem setarile de hover pentru fiecare in parte  */
+#oferte :first-child{
+    width: 85%;
+}
+#oferte :last-child{
+    width: 80%;
+    margin-top: 1%;
+}
+
+#oferte img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  } 
+
+.descriere_oferte  ::after{
+    content: '📗';
+}
+/* ai grija la a doua poza ca resolutia e prea mica si cand e dat
+zoom asa se face urat cu pop-ul  la icon */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 10%;
+        }
+#servicii{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#catalog{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#catalog2 { 
+    padding-top: 4%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.descriere_oferte{
+    margin-bottom: 5%;
+}
+
+/* de aici incepe zona de autovehicule, dupa parteneri */
+* {
+    margin: 0;
+  }
+  
+  * {
+    line-height: 1;
+  }
+#servicii_oferte{
+    background-image: url('img_fundal_c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box_upper{
+    background-image: url("green.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+
+#parteneri{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#poza_parteneri{
+    position: relative;
+    margin-top: 2%;
+}
+#box_parteneri{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+#logo_parteneri{
+    width: 17%;
+    height: 17%;
+    transform: translate(40%,20%);
+}
+
+#footer{
+    position: fixed;
+}
+/* aici e lista burger */
+
+
+nav #lista_burger{
+/* asta ascunde burgerul */
+    display: none ;
+}
+
+
+/* aici e forma burgerului */
+#forma_burger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+#forma_burger span {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 3px;
+  }
+
+#parteneri h4{
+    margin-top: 1%;
+}
+/**/
+
+
+
+@media screen and (max-width: 1200px) {
+    /* aici e functionalitatea */
+    ul{
+        list-style-type: none;
+      }
+    #burger ul{
+        display: none;
+    }
+    #burger:hover #bara_navigatie{
+        display: block;
+        transform: translateX(-80%);
+    }
+    #burger ul li ul{
+        display: none;
+    }
+    #bara_navigatie li:hover ul{
+        display: block;
+        transform: translate(-100%,-50%);
+        float:left;
+    
+    }
+  #bara_navigatie {
+    display: none;
+  }
+  #lista_burger{
+    display: block !important;
+    
+} 
+}
+@media screen and (max-width: 1700px){
+    .poze_dr {
+        display: none;
+    }
+    .poze_stg{
+        display: none;
+    }
+
+   #servicii_oferte{
+    transform: translateY(50%);
+    margin-top: 30%;
+    margin-bottom: 1%;
+    
+   }
+   #box_servicii{
+    margin-top: 0%;
+    position: relative;
+
+   }
+ footer{
+    margin-top: 20%;
+ }
+    main{
+        background-image: url("green.jpg");
+   }
+   #parteneri h4{
+    transform: translateY(100%);
+   }
+  
+}
+@media screen and (max-width:1600px){
+
+    .container{
+        top:38%;
+        width: 950px;
+        height: 950px;
+    }
+   
+
+}
+@media screen and (max-width:1420px){
+    .container{
+        width:800px;
+        height: 800px;
+        top:34%;
+    }
+}
+@media screen and (max-width:1230px){
+    .container{
+        width: 650px;
+        height: 650px;
+        top:28%;
+    }
+}
+@media screen and (max-width:970px){
+    .container{
+        width: 450px;
+        height: 450px;
+        top:22%;
+    }
+}
+@media screen and (max-width:700px){
+    .container{
+        width: 300px;
+        height: 300px;
+        top:17%;
+    }
+}
+@media screen and (max-width: 520px){
+    .container{
+        width: 240px;
+        height: 240px;
+        top:13%;
+    }
+}
+@media screen and (max-width: 410px){
+    .container{
+        width: 200px;
+        height: 200px;
+        top:12%;
+    }
+}
+@media screen and (max-width: 350px){
+    .container{
+        width: 170px;
+        height: 170px;
+        top:10%;
+    }
+}
+
+/* media query pt scris */
+@media screen and (max-width:1300px){
+    #servicii{
+        font-size: 140%;
+    }
+
+}
+@media screen and (max-width: 1030px){
+    #servicii{
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 870px){
+    #servicii{
+        font-size: 100%;
+    }
+    .descriere_oferte{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 725px){
+    #servicii{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width:570px){
+    #servicii{
+        font-size: 60%;
+    }
+    .descriere_oferte{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:450px){
+    #servicii{
+        font-size: 50%;
+    }
+    .descriere_oferte{
+        font-size: 40%;
+    }
+}
+@media screen and (max-width:450px){
+    #servicii{
+        font-size: 40%;
+    }
+  
+}
+
+/* de aici e media pentru logo */
+
+@media screen and (max-width: 1600px)
+{
+    #logo{
+        width: 12%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 650px)
+{
+    #logo{
+        width: 13%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 440px)
+{
+    #logo{
+        width: 15%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 340px)
+{
+    #logo{
+        width: 17%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    #poza_parteneri{
+        width: 60%;
+        height: auto;
+    }
+    #logo_parteneri{
+        width: 175px;
+        height: 125px;
+    }
+}
+@media screen and (max-width: 1080px){
+    #logo_parteneri{
+        width: 125px;
+        height: 75px;
+        transform: translate(60%,40%);
+    }
+}
+@media screen and (max-width: 730px){
+    #logo_parteneri{
+        width: 90px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 600px){
+    #logo_parteneri{
+        width: 60px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 380px){
+    #logo_parteneri{
+        width: 40px;
+        height: 25px;
+    }
+}
+@media screen and (max-width:970px){
+    #parteneri h4{
+        font-size: 50%;
+        transform: translateY(300%);
+    }
+}
+@media screen and (max-width:630px){
+    #parteneri h4{
+        font-size: 50%;
+        transform: translateY(170%);
+    }
+}

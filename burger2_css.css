@@ -1,0 +1,27 @@
+#forma_burger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+#forma_burger span {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 1px;
+  }
+ul{
+    list-style-type: none;
+  }
+#burger ul{
+    display: none;
+}
+#burger:hover #bara_navigatie{
+    display: block;
+}
+#burger ul li ul{
+    display: none;
+}
+#bara_navigatie li:hover ul{
+    display: block;
+}

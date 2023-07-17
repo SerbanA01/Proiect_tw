@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Plantagro COM | Noi iti imbogatim recolta!</title>
+        <meta name="description" content="Plantagro! Noi va imbogatim recolta din 2001.">
+        <meta name="keywords" content="agricultura,login, cont nou, fermier, user nou , plantagro, comercializarea inputurilor agricole, Plantagro, agriculture, Romania, Romanian agriculture, distributie inputuri, Plantagro COM, plantagro.com">
+        <meta name="author" content="Serban Andrei">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <base href="https://www.plantagro.ro">
+        <link rel="stylesheet" href="C:\Users\serba\OneDrive\Desktop\proiect tw\login.css">
+        <link type="image/png" rel="icon" href="C:\Users\serba\OneDrive\Desktop\proiect tw\plantagro.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <script src="C:\Users\serba\OneDrive\Desktop\proiect tw\login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form" id="login">
+                <h1 class="form_title">Login</h1>
+                <div class="form_message form_message-error"></div>
+                <div class="form_input-group">
+                    <input type="text" id="loginUsername" class="form_input" autofocus placeholder="Username sau email">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input-group">
+                    <input type="password" id="loginPassword" class="form_input" autofocus placeholder="Parola">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <button class="form_button" type="submit">Continue</button>
+                <p class="form_text">
+                    <a href="#" class="form_link">Ai uitat parola?</a>
+                </p>
+                <p class="form_text">
+                    <a class="form_link" href="./" id="linkCreateAccount">Creaza un cont nou.</a>
+                </p>
+            </form>
+            <form class="form form-hidden" id="createAccount">
+                <h1 class="form_title">Creaza cont</h1>
+                <div class="form_message form_message-error"></div>
+                <div class="form_input-group">
+                    <input type="text" id="signupUsername" class="form_input" autofocus placeholder="Username">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input-group">
+                    <input type="text" id="signupEmail" class="form_input" autofocus placeholder="Email Address">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input-group">
+                    <input type="password" id="signupPassword" class="form_input" autofocus placeholder="Password">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <div class="form_input-group">
+                    <input type="password" id="signupPassword_confirm" class="form_input" autofocus placeholder="Confirm password">
+                    <div class="form_input-error-message"></div>
+                </div>
+                <button class="form_button" type="submit">Continue</button>
+                <p class="form_text">
+                    <a class="form_link" href="./" id="linkLogin">Ai deja cont facut? Login </a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
