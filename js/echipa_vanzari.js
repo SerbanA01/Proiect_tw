@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("keydown", e=> {
         var container = document.getElementById("spatiu_grau");
         let wheatImage = document.createElement('img');
-        wheatImage.src = "C:\\Users\\serba\\OneDrive\\Desktop\\proiect tw\\spic_grau2.png";
+        wheatImage.src = "images/spic_grau2.png";
 
         wheatImage.style.width = "50px";
         wheatImage.style.border = "1px dotted green";

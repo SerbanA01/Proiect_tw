@@ -273,12 +273,12 @@ figcaption {
     line-height: 1;
   }
 #servicii_oferte{
-    background-image: url('img_fundal_c.jpg');
+    background-image: url('../images/img_fundal_c.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #box_upper{
-    background-image: url("green.jpg");
+    background-image: url("../images/green.jpg");
     background-repeat: no-repeat;
     
     background-size: cover;
@@ -391,7 +391,7 @@ nav #lista_burger{
     margin-top: 20%;
  }
     main{
-        background-image: url("green.jpg");
+        background-image: url("../images/green.jpg");
    }
    #parteneri h4{
     transform: translateY(100%);

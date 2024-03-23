@@ -201,7 +201,7 @@ nav{/*tine minte aici ca daca mai ai un nav pe pagina se strica*/
     margin: 3px;
   }
 body{
-background-image: url("nisip.jpg");
+background-image: url("../images/nisip.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 }
